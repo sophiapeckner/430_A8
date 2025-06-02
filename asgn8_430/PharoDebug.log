@@ -1,0 +1,4478 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (stable).changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+2 June 2025 10:14:11.45 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:11.27-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:11.27-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:11.27-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:11.27-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:11.27-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:11.27-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (stable).changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+2 June 2025 10:14:26.179 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:26.055-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:26.055-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:26.055-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:26.055-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:26.055-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:14:26.055-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (stable).changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+2 June 2025 10:15:14.386 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:14.261-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:14.261-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:14.261-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:14.261-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:14.261-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:14.261-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (stable).changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+2 June 2025 10:15:16.177 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:16.034-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:16.034-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:16.034-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:16.034-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:16.034-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:16.034-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (stable).changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+2 June 2025 10:15:25.115 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:25.003-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:25.003-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:25.003-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:25.003-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:25.003-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:25.003-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (stable).changes.
+
+Please check that you have write permission for this file.
+
+You won't be able to save this image correctly until you fix this.
+2 June 2025 10:15:43.408 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to the changes file named C:\Users\mtsta\Documents\Ph...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'the changes file named C:\Users\mtsta\Documents\Pharo\images\Pharo image...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>inform:withChangesRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+		arg2: 	'C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pharo image (...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>informProblemInChanges:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot write to &fileRef.
+
+Please check that you have write permis...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+		arg2: 	false
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNilReadOnly:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	false
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+PharoFilesOpener>>changesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	true
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+		tmp1: 	SourceFile(C:\Users\mtsta\Documents\Pharo\images\Pharo image (stable)\Pha...etc...
+		tmp2: 	nil
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		vm: 	a VirtualMachine
+
+
+SourceFileArray class>>startUp:
+	Receiver: SourceFileArray
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#changeRecordsFor:->SourceFileArray>>#changeReco...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SourceFileArray
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Sources-Sources'
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SourceFileArray)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SourceFileArray
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:43.292-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	a ClassSessionHandler(SourceFileArray)
+		arg3: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:43.292-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4...etc...
+		startpc: 	a CompiledBlock: [ arg2 value: arg3 ]
+		numArgs: 	0
+		receiver: 	a WorkingSession
+
+
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SourceFileArray)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:43.292-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(SessionAccessModeResolv...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(SmallInteger) a ClassSessionHandler(Sessio...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:43.292-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:43.292-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2025-06-02T10:15:43.292-07:00
+		properties: 	a Dictionary(#accessMode->#readWrite )
+
+
+SessionManager>>launchSnapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+	Receiver: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ]
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		outerContext: 	SessionManager>>snapshot:andQuit:
+		startpc: 	a CompiledBlock: [ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+...etc...
+		numArgs: 	0
+		receiver: 	a SessionManager
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withChangesRef:
+PharoFilesOpener>>informProblemInChanges:
+PharoFilesOpener>>changesFileOrNilReadOnly:silent:
+PharoFilesOpener>>changesFileOrNilReadOnly:
+PharoFilesOpener>>changesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SourceFileArray class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :arg3 | 
+		[ arg2 value: arg3 ]
+			on: Exception
+			do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ 
+	tmp3 := self launchSnapshot: arg1 andQuit: arg2.
+	tmp1 signal ] in SessionManager>>snapshot:andQuit:
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+ZeroDivide
+2 June 2025 10:50:21.048 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+SmallInteger>>/
+	Receiver: 2
+	Arguments and temporary variables: 
+		aNumber: 	0
+	Receiver's instance variables: 
+2
+
+PharoSyntaxTutorial>>divideTwoByZero
+	Receiver: a Pharo Tutorial (Pharo Syntax Tutorial)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+a Pharo Tutorial (Pharo Syntax Tutorial)
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+nil
+
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self ...etc...
+	Arguments and temporary variables: 
+		arg1: 	SyntaxErrorNotification
+		arg2: 	[ :exception | 
+			self compilationContext requestor
+                ifNo...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>evaluate
+		startpc: 	a CompiledBlock: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil...etc...
+		numArgs: 	0
+		receiver: 	an OpalCompiler
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[:result | result]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[:result | result]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{ClyTextEditor}
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary(#CompletionEngineClass->CoCompletionEngine )
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+		thirdArg: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+Set>>do:
+	Receiver: a Set(#widenSelectionOfIt on Meta + 2 do [ :target | target editor widenSelectionOfIt ]
+ #...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListen...etc...
+		index: 	3
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#widenSelectionOfIt on Meta + 2 do [ :target | target editor wi...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aTarget: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNavigatio...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+		...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNav...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		morph: 	a RubEditingArea(708765184)
+		targetSelector: 	#yourself
+
+
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInsta...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keyDown '<Ctrl-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		evt: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		aKeystrokeEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KMShortcutHandler>>handleKeystroke:inMorph:
+	Receiver: a KMShortcutHandler
+	Arguments and temporary variables: 
+		aKeystrokeEvent: 	[keyDown '<Ctrl-d>']
+		aMorph: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+a KMShortcutHandler
+
+RubEditingArea(Morph)>>handleKeyDown:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+		handler: 	a KMShortcutHandler
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keyDown '<Ctrl-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		timeStamp: 	2169811
+		source: 	a HandMorph(950122496)
+		windowIndex: 	nil
+		type: 	#keyDown
+		buttons: 	16
+		position: 	(38@138)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	7
+		key: 	Key D code: (68)
+		supressNextKeyPress: 	false
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+
+--- The full stack ---
+SmallInteger>>/
+PharoSyntaxTutorial>>divideTwoByZero
+UndefinedObject>>DoIt
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+KMShortcutHandler>>handleKeystroke:inMorph:
+RubEditingArea(Morph)>>handleKeyDown:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[
+		result := focusHolder handleFocusEvent: transformedEvent.
+	] in HandMorph>>sendFocusEvent:to:clear:
+FullBlockClosure(BlockClosure)>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+[
+		(morphicWorld activeHand isNotNil and: [ anEvent hand isNotNil ]) ifTrue: [
+			morphicWorld activeHand handleEvent: anEvent
+		]
+	] in OSWindowMorphicEventHandler>>dispatchMorphicEvent:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycleNow
+WorldMorph>>doOneCycle
+[ 
+		| extraWorldsToDraw |
+		extraWorldsToDraw := ExtraWorldListMutex critical: [ 
+			                     self extraWorldList ].
+		extraWorldsToDraw do: [ :world | world doOneCycle ].
+
+		(self currentWorld isNotNil and: [ 
+			 (extraWorldsToDraw includes: self currentWorld) not ]) ifTrue: [ 
+			self currentWorld doOneCycle ] ] in WorldMorph class>>doOneCycle
+FullBlockClosure(BlockClosure)>>ensure:
+WorldState class>>doDrawCycleWith:
+WorldMorph class>>doOneCycle
+MorphicRenderLoop>>doOneCycle
+MorphicRenderLoop>>doOneCycleWhile:
+[
+		MorphicRenderLoop new doOneCycleWhile: [ true ]
+	] in MorphicUIManager>>spawnNewProcess
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+ZeroDivide
+2 June 2025 10:50:21.298 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+SmallInteger>>/
+	Receiver: 2
+	Arguments and temporary variables: 
+		aNumber: 	0
+	Receiver's instance variables: 
+2
+
+PharoSyntaxTutorial>>divideTwoByZero
+	Receiver: a Pharo Tutorial (Pharo Syntax Tutorial)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+a Pharo Tutorial (Pharo Syntax Tutorial)
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+nil
+
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self ...etc...
+	Arguments and temporary variables: 
+		arg1: 	SyntaxErrorNotification
+		arg2: 	[ :exception | 
+			self compilationContext requestor
+                ifNo...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>evaluate
+		startpc: 	a CompiledBlock: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil...etc...
+		numArgs: 	0
+		receiver: 	an OpalCompiler
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[:result | result]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[:result | result]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{ClyTextEditor}
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary(#CompletionEngineClass->CoCompletionEngine )
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+		thirdArg: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+Set>>do:
+	Receiver: a Set(#widenSelectionOfIt on Meta + 2 do [ :target | target editor widenSelectionOfIt ]
+ #...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListen...etc...
+		index: 	3
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#widenSelectionOfIt on Meta + 2 do [ :target | target editor wi...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aTarget: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNavigatio...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+		...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNav...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation)<<error during printing>>
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		morph: 	a RubEditingArea(708765184)
+		targetSelector: 	#yourself
+
+
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInsta...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keyDown '<Ctrl-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		evt: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		aKeystrokeEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KMShortcutHandler>>handleKeystroke:inMorph:
+	Receiver: a KMShortcutHandler
+	Arguments and temporary variables: 
+		aKeystrokeEvent: 	[keyDown '<Ctrl-d>']
+		aMorph: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+a KMShortcutHandler
+
+RubEditingArea(Morph)>>handleKeyDown:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+		handler: 	a KMShortcutHandler
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keyDown '<Ctrl-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		timeStamp: 	2169811
+		source: 	a HandMorph(950122496)
+		windowIndex: 	nil
+		type: 	#keyDown
+		buttons: 	16
+		position: 	(38@138)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	7
+		key: 	Key D code: (68)
+		supressNextKeyPress: 	false
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+
+--- The full stack ---
+SmallInteger>>/
+PharoSyntaxTutorial>>divideTwoByZero
+UndefinedObject>>DoIt
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+KMShortcutHandler>>handleKeystroke:inMorph:
+RubEditingArea(Morph)>>handleKeyDown:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[
+		result := focusHolder handleFocusEvent: transformedEvent.
+	] in HandMorph>>sendFocusEvent:to:clear:
+FullBlockClosure(BlockClosure)>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+[
+		(morphicWorld activeHand isNotNil and: [ anEvent hand isNotNil ]) ifTrue: [
+			morphicWorld activeHand handleEvent: anEvent
+		]
+	] in OSWindowMorphicEventHandler>>dispatchMorphicEvent:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycleNow
+WorldMorph>>doOneCycle
+[ 
+		| extraWorldsToDraw |
+		extraWorldsToDraw := ExtraWorldListMutex critical: [ 
+			                     self extraWorldList ].
+		extraWorldsToDraw do: [ :world | world doOneCycle ].
+
+		(self currentWorld isNotNil and: [ 
+			 (extraWorldsToDraw includes: self currentWorld) not ]) ifTrue: [ 
+			self currentWorld doOneCycle ] ] in WorldMorph class>>doOneCycle
+FullBlockClosure(BlockClosure)>>ensure:
+WorldState class>>doDrawCycleWith:
+WorldMorph class>>doOneCycle
+MorphicRenderLoop>>doOneCycle
+MorphicRenderLoop>>doOneCycleWhile:
+[
+		MorphicRenderLoop new doOneCycleWhile: [ true ]
+	] in MorphicUIManager>>spawnNewProcess
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+ZeroDivide
+2 June 2025 10:51:40.673 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+SmallInteger>>/
+	Receiver: 2
+	Arguments and temporary variables: 
+		aNumber: 	0
+	Receiver's instance variables: 
+2
+
+PharoSyntaxTutorial>>divideTwoByZero
+	Receiver: a Pharo Tutorial (Pharo Syntax Tutorial)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+a Pharo Tutorial (Pharo Syntax Tutorial)
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+nil
+
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self ...etc...
+	Arguments and temporary variables: 
+		arg1: 	SyntaxErrorNotification
+		arg2: 	[ :exception | 
+			self compilationContext requestor
+                ifNo...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>evaluate
+		startpc: 	a CompiledBlock: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil...etc...
+		numArgs: 	0
+		receiver: 	an OpalCompiler
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[:result | result]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[:result | result]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{ClyTextEditor}
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary(#CompletionEngineClass->CoCompletionEngine )
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+		thirdArg: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+Set>>do:
+	Receiver: a Set(#widenSelectionOfIt on Meta + 2 do [ :target | target editor widenSelectionOfIt ]
+ #...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListen...etc...
+		index: 	3
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#widenSelectionOfIt on Meta + 2 do [ :target | target editor wi...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aTarget: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNavigatio...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+		...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNav...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		morph: 	a RubEditingArea(708765184)
+		targetSelector: 	#yourself
+
+
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInsta...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatcher>>dispatchKeystroke:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		aKeyEvent: 	[keyDown '<Ctrl-d>']
+		chain: 	a KMDispatchChain
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		evt: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		aKeystrokeEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KMShortcutHandler>>handleKeystroke:inMorph:
+	Receiver: a KMShortcutHandler
+	Arguments and temporary variables: 
+		aKeystrokeEvent: 	[keyDown '<Ctrl-d>']
+		aMorph: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+a KMShortcutHandler
+
+RubEditingArea(Morph)>>handleKeyDown:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+		handler: 	a KMShortcutHandler
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+KeyboardEvent>>sentTo:
+	Receiver: [keyDown '<Ctrl-d>']
+	Arguments and temporary variables: 
+		anObject: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		timeStamp: 	2249507
+		source: 	a HandMorph(950122496)
+		windowIndex: 	nil
+		type: 	#keyDown
+		buttons: 	16
+		position: 	(-57@126)
+		handler: 	nil
+		wasHandled: 	true
+		keyValue: 	100
+		charCode: 	100
+		scanCode: 	7
+		key: 	Key D code: (68)
+		supressNextKeyPress: 	false
+
+
+RubEditingArea(Morph)>>handleEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+RubEditingArea(Morph)>>handleFocusEvent:
+	Receiver: a RubEditingArea(708765184)
+	Arguments and temporary variables: 
+		anEvent: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (590@145)
+		owner: 	a TransformWithLayoutMorph(126534400)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(282880256) a RubCursor(619376128...etc...
+		fullBounds: 	(0@0) corner: (590@145)
+		color: 	Color transparent
+		extension: 	a MorphExtension (179426304) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a RubScrolledTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(655118080)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color black
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	true
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(619376128)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	an OrderedCollection()
+		getMenuPolicy: 	a RubEditingArea(708765184)
+		mouseDownPoint: 	nil
+		completionEngine: 	a CoCompletionEngine
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+
+--- The full stack ---
+SmallInteger>>/
+PharoSyntaxTutorial>>divideTwoByZero
+UndefinedObject>>DoIt
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+FullBlockClosure(BlockClosure)>>on:do:
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+RubSmalltalkEditor>>evaluateSelection
+RubSmalltalkEditor>>doIt
+RubSmalltalkEditor>>doIt:
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+KMCategoryBinding>>completeMatch:buffer:
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+Array(SequenceableCollection)>>do:
+KMKeymap>>notifyCompleteMatchTo:buffer:
+KMKeymap>>onMatchWith:notify:andDo:
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+Set>>do:
+KMCategory>>onMatchWith:notify:andDo:
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+OrderedCollection>>do:
+KMDispatcher>>dispatch:
+KMTarget>>dispatch:
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+KMDispatchChain>>do:
+KMDispatchChain>>dispatch:
+KMDispatcher>>dispatchKeystroke:
+RubEditingArea(Morph)>>dispatchKeystrokeForEvent:
+RubEditingArea(Morph)>>handleKeystrokeWithKeymappings:
+KMShortcutHandler>>handleKeystroke:inMorph:
+RubEditingArea(Morph)>>handleKeyDown:
+KeyboardEvent>>sentTo:
+RubEditingArea(Morph)>>handleEvent:
+RubEditingArea(Morph)>>handleFocusEvent:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[
+		result := focusHolder handleFocusEvent: transformedEvent.
+	] in HandMorph>>sendFocusEvent:to:clear:
+FullBlockClosure(BlockClosure)>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+[
+		(morphicWorld activeHand isNotNil and: [ anEvent hand isNotNil ]) ifTrue: [
+			morphicWorld activeHand handleEvent: anEvent
+		]
+	] in OSWindowMorphicEventHandler>>dispatchMorphicEvent:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycleNow
+WorldMorph>>doOneCycle
+[ 
+		| extraWorldsToDraw |
+		extraWorldsToDraw := ExtraWorldListMutex critical: [ 
+			                     self extraWorldList ].
+		extraWorldsToDraw do: [ :world | world doOneCycle ].
+
+		(self currentWorld isNotNil and: [ 
+			 (extraWorldsToDraw includes: self currentWorld) not ]) ifTrue: [ 
+			self currentWorld doOneCycle ] ] in WorldMorph class>>doOneCycle
+FullBlockClosure(BlockClosure)>>ensure:
+WorldState class>>doDrawCycleWith:
+WorldMorph class>>doOneCycle
+MorphicRenderLoop>>doOneCycle
+MorphicRenderLoop>>doOneCycleWhile:
+[
+		MorphicRenderLoop new doOneCycleWhile: [ true ]
+	] in MorphicUIManager>>spawnNewProcess
+[ 
+			  self value.
+			  Processor terminateRealActive ] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+ZeroDivide
+2 June 2025 10:51:40.816 am
+
+VM: Win32 - x86_64 - Win64 - CoInterpreter VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+StackToRegisterMappingCogit VMMaker-tonel.1 uuid: 28d08f23-7eb4-0d00-a74a-9ef702f9ba6c Mar 30 2023
+v9.0.22 - Commit: 421845e1 - Date: 2023-03-30 09:49:26 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.539.sha.28169ae414c78e07602b31545f43061b4fa7a88a (64 Bit)]
+
+SmallInteger>>/
+	Receiver: 2
+	Arguments and temporary variables: 
+		aNumber: 	0
+	Receiver's instance variables: 
+2
+
+PharoSyntaxTutorial>>divideTwoByZero
+	Receiver: a Pharo Tutorial (Pharo Syntax Tutorial)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+a Pharo Tutorial (Pharo Syntax Tutorial)
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+nil
+
+[ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self compileDoit] in OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+FullBlockClosure(BlockClosure)>>on:do:
+	Receiver: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil: [ {context} ]) executeMethod: self ...etc...
+	Arguments and temporary variables: 
+		arg1: 	SyntaxErrorNotification
+		arg2: 	[ :exception | 
+			self compilationContext requestor
+                ifNo...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>evaluate
+		startpc: 	a CompiledBlock: [ receiver withArgs: (context ifNil: [ #() ] ifNotNil...etc...
+		numArgs: 	0
+		receiver: 	an OpalCompiler
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+
+	^ PharoSyntaxTutorial new divideTwoByZero
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadWriteStream
+		aBlock: 	[:result | result]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelectionAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[:result | result]
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>evaluateSelection
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+RubSmalltalkEditor>>doIt:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->a Dictionary(Key BACKSP...etc...
+		textArea: 	a RubEditingArea(708765184)
+		notificationStrategy: 	a RubTextInsertionStrategy
+		completionEngine: 	a CoCompletionEngine
+
+
+[ :target | target editor doIt: nil ] in RubSmalltalkEditor class>>buildShortcutsOn:
+	Receiver: RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBuilder: 	a PragmaMenuAndShortcutRegistration
+		target: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		superclass: 	RubTextEditor
+		methodDict: 	a MethodDictionary(#atCompletionPosition->RubSmalltalkEditor>>#atCo...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{ClyTextEditor}
+		name: 	#RubSmalltalkEditor
+		classPool: 	a Dictionary(#CompletionEngineClass->CoCompletionEngine )
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Rubric-Editing-Code'
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		anArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:cull:
+	Receiver: [ :target | target editor doIt: nil ]
+	Arguments and temporary variables: 
+		firstArg: 	a RubEditingArea(708765184)
+		secondArg: 	a RubEditingArea(708765184)
+		thirdArg: 	[keyDown '<Ctrl-d>']
+	Receiver's instance variables: 
+		outerContext: 	RubSmalltalkEditor class>>buildShortcutsOn:
+		startpc: 	a CompiledBlock: [ :target | target editor doIt: nil ]
+		numArgs: 	1
+		receiver: 	RubSmalltalkEditor
+
+
+KMCategoryBinding>>completeMatch:buffer:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		aKeymap: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :l | l completeMatch: self buffer: aBuffer ] in KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		l: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Arguments and temporary variables: 
+<<error during printing>>
+	Receiver's instance variables: 
+an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+
+KMKeymap>>notifyCompleteMatchTo:buffer:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		aListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+		aBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		listeners: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatcher)
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+KMKeymap>>onMatchWith:notify:andDo:
+	Receiver: #doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		action: 	[ :target | target editor doIt: nil ]
+		name: 	#doIt
+		shortcut: 	Meta + D
+		defaultShortcut: 	Meta + D
+		description: 	'Do it'
+
+
+[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListener 
+			andDo: aBlock ] in KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+		entry: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+Set>>do:
+	Receiver: a Set(#widenSelectionOfIt on Meta + 2 do [ :target | target editor widenSelectionOfIt ]
+ #...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :entry | 
+		entry onMatchWith: anEventBuffer 
+			notify: aMatchListen...etc...
+		index: 	3
+		each: 	#doIt on Meta + D do [ :target | target editor doIt: nil ]
+
+	Receiver's instance variables: 
+		tally: 	13
+		array: 	an Array(#widenSelectionOfIt on Meta + 2 do [ :target | target editor wi...etc...
+
+
+KMCategory>>onMatchWith:notify:andDo:
+	Receiver: a KMCategory
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aMatchListener: 	an Array(a KMCategoryBinding(#RubSmalltalkEditor) a KMDispatche...etc...
+		aBlock: 	[ ^self ]
+	Receiver's instance variables: 
+		name: 	#RubSmalltalkEditor
+		platforms: 	a Dictionary(#Windows->a KMStorage #all->a KMStorage )
+
+
+KMCategoryBinding>>verifyMatchWith:notifying:thenDoing:
+	Receiver: a KMCategoryBinding(#RubSmalltalkEditor)
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aListener: 	a KMDispatcher
+		anAction: 	[ ^self ]
+	Receiver's instance variables: 
+		target: 	a RubEditingArea(708765184)
+		category: 	a KMCategory
+		morph: 	a RubEditingArea(708765184)
+
+
+[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+			verifyMatchWith: anEventBuffer 
+			notifying: self
+			thenDoing: [ ^self ] ] in KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+		aTarget: 	a KMCategoryBinding(#RubSmalltalkEditor)
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNavigatio...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :aTarget | 
+		"nice hack to stop in the first listener"
+		aTarget 
+		...etc...
+		index: 	3
+	Receiver's instance variables: 
+		array: 	an Array(a KMCategoryBinding(nil) a KMCategoryBinding(#MorphFocusCtrlNav...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+KMDispatcher>>dispatch:
+	Receiver: a KMDispatcher
+	Arguments and temporary variables: 
+		anEventBuffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		currentEvent: 	nil
+		targets: 	a Set(a KMCategoryBinding(#MorphFocusCtrlNavigation) a KMCategoryBindi...etc...
+		morph: 	a RubEditingArea(708765184)
+		directKeymaps: 	a KMCategory
+
+
+KMTarget>>dispatch:
+	Receiver: a KMTarget
+	Arguments and temporary variables: 
+		buffer: 	an OrderedCollection([keyDown '<Ctrl-d>'])
+	Receiver's instance variables: 
+		morph: 	a RubEditingArea(708765184)
+		targetSelector: 	#yourself
+
+
+[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInstance buffer copy.
+		aKeyboardEvent wasHandled ifTrue: [ ^self ].
+	] in KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aKeyboardEvent: 	[keyDown '<Ctrl-d>']
+		targetToDispatch: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>do:
+	Receiver: a KMDispatchChain
+	Arguments and temporary variables: 
+		aBlock: 	[ :targetToDispatch |
+		targetToDispatch dispatch: KMBuffer uniqueInsta...etc...
+		currentTarget: 	a KMTarget
+	Receiver's instance variables: 
+		target: 	a KMTarget
+		dispatcher: 	a KMDispatcher
+		initialTarget: 	a KMGlobalDispatcher
+
+
+KMDispatchChain>>dispatch:
+	Receiver: a KMDispatchC
