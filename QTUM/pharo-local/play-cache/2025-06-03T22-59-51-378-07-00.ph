@@ -1,1 +1,1 @@
-|expr| expr := NumC new. expr n: 3.expr n. MyApp main: expr.
+|expr| expr := IdC new. expr name: #a.MyApp interp: expr.
