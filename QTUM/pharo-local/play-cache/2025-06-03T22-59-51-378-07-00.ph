@@ -1,1 +1,1 @@
-|expr| expr := IdC new. expr name: #a.MyApp interp: expr.
+|expr interpRetNum interpRetStr|expr := NumC new. expr n: 3.interpRetNum := MyApp interp: expr.Transcript show: interpRetNum n; cr.expr := StrC new.expr s: 'hello'.interpRetStr := MyApp interp: expr.Transcript show: interpRetStr s; cr.

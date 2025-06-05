@@ -21,11 +21,11 @@ PhLImage {
 			#imageArguments : OrderedCollection [ ],
 			#vm : PhLVirtualMachine {
 				#executableRef : FileLocator {
-					#path : RelativePath [ '100-x64', 'Pharo.app', 'Contents', 'MacOS', 'Pharo' ],
+					#path : RelativePath [ '100-x64', 'Pharo.exe' ],
 					#origin : #launcherVMsLocation
 				},
 				#vmBinaryRef : FileLocator {
-					#path : RelativePath [ '100-x64', 'Pharo.app', 'Contents', 'MacOS', 'Pharo' ],
+					#path : RelativePath [ '100-x64', 'Pharo.exe' ],
 					#origin : #launcherVMsLocation
 				},
 				#manager : @4,
@@ -33,6 +33,11 @@ PhLImage {
 				#id : '100-x64',
 				#blessing : 'stable',
 				#arch : '64'
+			}
+		}
+	],
+	#shouldRunInitializationScript : false
+}
 			}
 		}
 	],
